@@ -1,0 +1,113 @@
+
+#Namespaces used for the environment
+DB Namespace:kvijvija-lab11-brm01-db
+App Namespace:kvijvija-lab11-brm01-apps
+
+#Database access details
+DB_HOST : 100.77.27.112
+DB_PORT : 32525
+DB_SERVICE : PINPDB
+PIN User/password : pin/C1G2b3u4##
+
+#Traefik Ingress details
+Traefik_URL : http://phx-0103.snphxprshared1.gbucdsint02phx.oraclevcn.com:32290/dashboard/
+
+#Promotheus, Grafana url and credentials
+Promotheus_URL : http://phx-0103.snphxprshared1.gbucdsint02phx.oraclevcn.com:32285
+Grafana_URL : http://phx-0103.snphxprshared1.gbucdsint02phx.oraclevcn.com:32283
+Grafana username/password : admin/prom-operator
+
+#Open Search Dashboard details
+OpenSearch_URL : http://phx-0103.snphxprshared1.gbucdsint02phx.oraclevcn.com:32284
+Open Search Dashboard username/password : admin/admin
+
+#BillingCare application url and credentials
+BC_URL : http://phx-0103.snphxprshared1.gbucdsint02phx.oraclevcn.com:32280/bc
+BC_username/password : weblogic/Passw0rd1234#
+
+#BOC application url and credentials
+BOC_URL : http://phx-0103.snphxprshared1.gbucdsint02phx.oraclevcn.com:32280/opsdashboard
+BOC_weblogic username/password : weblogic/Passw0rd1234#
+BOC_username/password : boc_test_user/Passw0rd1234#
+
+#BRM Rest Services API(BCWS)
+REST_API_Base_URL : http://phx-0103.snphxprshared1.gbucdsint02phx.oraclevcn.com:32280/bcws/webresources/v1.0/
+
+#BRM Web Services Manager(WSM)
+WSM_URL : http://phx-0103.snphxprshared1.gbucdsint02phx.oraclevcn.com:32280/infranetwebsvc
+
+#PDC application url and credentials
+PDC_URL : http://phx-0103.snphxprshared1.gbucdsint02phx.oraclevcn.com:32280/pdc
+PDC_username/password : pdcuser/Passw0rd1234#
+
+#PCC application url and credentials
+PCC_URL : http://phx-0103.snphxprshared1.gbucdsint02phx.oraclevcn.com:32280/pcc
+PCC_username/password : pccuser/Passw0rd1234#
+
+#Application POD Details:
+App_PODs : NAME                                           READY   STATUS      RESTARTS      AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+admin-server-app-699d9f9b8b-j88jd              1/1     Running     0             82s     10.244.2.49   phx-0103   <none>           <none>
+bcws-domain-admin-server                       2/2     Running     0             27m     10.244.2.34   phx-0103   <none>           <none>
+bcws-domain-deployer-574897d5b4-xrrf7          1/1     Running     0             39m     10.244.2.15   phx-0103   <none>           <none>
+bcws-domain-managed-server1                    2/2     Running     0             25m     10.244.2.36   phx-0103   <none>           <none>
+bcws-domain-managed-server2                    2/2     Running     0             25m     10.244.2.37   phx-0103   <none>           <none>
+billingcare-domain-admin-server                2/2     Running     0             27m     10.244.2.35   phx-0103   <none>           <none>
+billingcare-domain-deployer-5d8fd7b68d-lg27q   1/1     Running     0             39m     10.244.2.17   phx-0103   <none>           <none>
+billingcare-domain-managed-server1             2/2     Running     0             25m     10.244.2.39   phx-0103   <none>           <none>
+billingcare-domain-managed-server2             2/2     Running     0             25m     10.244.2.38   phx-0103   <none>           <none>
+boc-domain-admin-server                        2/2     Running     0             27m     10.244.2.33   phx-0103   <none>           <none>
+boc-domain-deployer-f8cc9574f-22gtc            1/1     Running     0             39m     10.244.2.16   phx-0103   <none>           <none>
+boc-domain-managed-server1                     2/2     Running     0             25m     10.244.2.41   phx-0103   <none>           <none>
+boc-domain-managed-server2                     2/2     Running     0             25m     10.244.2.40   phx-0103   <none>           <none>
+brmdomain-admin-server                         2/2     Running     0             26m     10.244.1.15   phx-0097   <none>           <none>
+brmdomain-managed-server1                      2/2     Running     0             24m     10.244.1.16   phx-0097   <none>           <none>
+brmgateway1-f6cdcdcf8-kt5nb                    0/1     Init:0/1    0             5m9s    10.244.1.28   phx-0097   <none>           <none>
+cm-86bccb47b-mmzzz                             2/2     Running     0             14m     10.244.1.19   phx-0097   <none>           <none>
+configloader-69f99d977b-crs74                  1/1     Running     0             5m9s    10.244.1.31   phx-0097   <none>           <none>
+customerupdater1-0                             0/1     Init:0/1    0             5m9s    10.244.1.23   phx-0097   <none>           <none>
+diametergateway1-0                             0/1     Init:0/1    0             5m9s    10.244.1.26   phx-0097   <none>           <none>
+diametergateway2-0                             0/1     Init:0/1    0             5m9s    10.244.1.29   phx-0097   <none>           <none>
+dm-aq-595795d47f-jz6hg                         1/1     Running     0             28m     10.244.2.21   phx-0103   <none>           <none>
+dm-eai-68f8fb8dc9-ghpbk                        1/1     Running     0             28m     10.244.2.20   phx-0103   <none>           <none>
+dm-ifw-sync-65ff664879-nctzs                   1/1     Running     0             28m     10.244.2.22   phx-0103   <none>           <none>
+dm-oracle-6c9f499557-jdggk                     1/1     Running     0             28m     10.244.2.30   phx-0103   <none>           <none>
+ece-kafka-0                                    1/1     Running     0             11m     10.244.1.21   phx-0097   <none>           <none>
+ece-persistence-job-m4t7s                      0/1     Completed   0             9m54s   10.244.1.22   phx-0097   <none>           <none>
+ece-zookeeper-0                                1/1     Running     0             11m     10.244.1.20   phx-0097   <none>           <none>
+ecs-0                                          1/1     Running     0             5m9s    10.244.1.30   phx-0097   <none>           <none>
+ecs-1                                          1/1     Running     0             4m1s    10.244.2.47   phx-0103   <none>           <none>
+ecs-2                                          1/1     Running     0             3m20s   10.244.2.48   phx-0103   <none>           <none>
+emgateway1-0                                   0/1     Init:0/1    0             5m9s    10.244.1.25   phx-0097   <none>           <none>
+emgateway2-0                                   0/1     Init:0/1    0             5m9s    10.244.2.44   phx-0103   <none>           <none>
+httpgateway1-0                                 0/1     Init:0/1    0             5m9s    10.244.2.46   phx-0103   <none>           <none>
+httpgateway2-0                                 0/1     Init:0/1    0             5m9s    10.244.1.24   phx-0097   <none>           <none>
+nfs-client-provisioner-649bf58bd9-tr49b        1/1     Running     0             95m     10.244.1.3    phx-0097   <none>           <none>
+node-mgr-app-85cf4cd44-8777m                   1/1     Running     0             82s     10.244.2.50   phx-0103   <none>           <none>
+pcc-deployment-6448d6d646-dp5g5                1/1     Running     0             28m     10.244.2.19   phx-0103   <none>           <none>
+pdc-bre-deployment-6bcb6655f6-2jspv            1/1     Running     0             16m     10.244.1.18   phx-0097   <none>           <none>
+pdc-domain-adminserver                         2/2     Running     0             27m     10.244.2.32   phx-0103   <none>           <none>
+pdc-domain-job-vv2k4                           0/1     Completed   0             39m     10.244.2.18   phx-0103   <none>           <none>
+pdc-rre-deployment-fd474574d-6nz4b             1/1     Running     0             16m     10.244.1.17   phx-0097   <none>           <none>
+pdc-syncpdc-deployment-64694df868-l7qvf        1/1     Running     4 (21m ago)   28m     10.244.1.13   phx-0097   <none>           <none>
+pje-59f68b8856-prx64                           1/1     Running     0             28m     10.244.2.23   phx-0103   <none>           <none>
+pricingupdater-85498bcfbd-vhkh4                0/1     Running     0             5m9s    10.244.1.27   phx-0097   <none>           <none>
+ratedeventformatter1-0                         0/1     Init:0/1    0             5m9s    10.244.2.45   phx-0103   <none>           <none>
+realtime-pipe-8495bdd7ff-fjf68                 1/1     Running     0             28m     10.244.1.14   phx-0097   <none>           <none>
+rel-daemon-f84df568f-bt85c                     1/1     Running     5 (21m ago)   28m     10.244.2.24   phx-0103   <none>           <none>
+
+#DB POD Details:
+DB_PODs : NAME                                 READY   STATUS    RESTARTS   AGE   IP           NODE       NOMINATED NODE   READINESS GATES
+brm-db-deployment-54db76d596-btmnz   1/1     Running   0          95m   10.244.1.4   phx-0097   <none>           <none>
+
+Note: If any of the following pod is in Init:0/1 status. It means Account doesnt exists in the BRM Database or Config/Pricing information are not loaded to PDC. So please import the config and pricing information in PDC and create the customer in BRM. We need to restart the customerupdater1-0 (kubectl delete pod customerupdater1-0 -n namespace) after Account creation then the pods will be moving to running status and ECE will be moved to usageProcessing status.
+
+brmgateway1-
+diametergateway1-0
+diametergateway2-0
+emgateway1-0
+emgateway2-0
+httpgateway1-0
+httpgateway2-0
+radiusgateway1-0
+radiusgateway2-0
+ratedeventformatter1-0
